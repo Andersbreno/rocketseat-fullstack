@@ -16,9 +16,9 @@
     --h1: 800 24px/135% var(--font-family);
     --h2: 800 16px/140% var(--font-family);
     --h3: 800 14px/140% var(--font-family);
-    --text-span: 600 14px/140% var(var(--font-family));
-    --text: 400 16px/140% var(var(--font-family));
-    --text-sm: 400 14px/160% var(var(--font-family))
+    --text-span: 600 14px/145% var(--font-family);
+    --text: 400 16px/140% var(--font-family);
+    --text-sm: 400 14px/160% var(--font-family)
 }
 
 body {
@@ -51,7 +51,15 @@ img {
 }
 
 main {
-    margin-top: 40px;
+    margin-block: 40px;
+    gap: 80px 32px;
+
+    grid-template-columns: 2fr 1.5fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
 }
 
 .content-tag {
