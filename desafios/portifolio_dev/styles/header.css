@@ -1,0 +1,84 @@
+header {
+    background: url("../assets/backgrounds/Background_Intro.png") center center/cover no-repeat local;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 680px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+
+div > .avatar {
+    position: relative;
+
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 2px solid var(--span-color);
+    border-radius: 50%;
+    
+    margin-bottom: 60px;
+    object-fit: cover;
+
+    :first-child {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    :last-child {
+        position: absolute;
+        width: 30px;
+        right: 0;
+        bottom: 0;
+    } 
+}
+
+
+
+.container > div + p {
+    font-family: var(--font-subtitle);
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    font: var(--title-lg);
+    margin-bottom: 20px; 
+}
+
+.container h1 + p {
+    font: var(--text-sm);
+    color: #878EA1;
+}
+
+
+
+.technology-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 80px;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        background-color: #292C34;
+        border-radius: 50px;
+        padding: 9px 16px;
+        
+    }
+}
+
+.scroll-down {
+    display: inline-block;
+    position: relative ;
+    bottom: -61px;
+}
