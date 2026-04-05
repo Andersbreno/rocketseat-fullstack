@@ -1,0 +1,33 @@
+.background {
+    background-color: #0D0E11;
+}
+
+#my-services {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    
+}
+
+.cards-services {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+
+
+    width: 280px;
+    height: 155px;
+    
+    text-align: left;
+    
+    border: solid 2px #16181D;
+    border-radius: 12px;
+    
+    padding: 20px;
+    align-content: end;
+}
