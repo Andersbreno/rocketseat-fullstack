@@ -1,111 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=.., initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio Dev</title>
     <link rel="stylesheet" href="styles/index.CSS">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="" alt="">
-        <p>Hello World! Meu nome é <strong>Martina Santos</strong> e sou</p>
-        <h1>Desenvolvedor Fullstack</h1>
-        <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
+    <div>
+        <header class="padding">
+            <div class="container">
+                <div class="avatar">
+                    <img src="assets/profile.png" alt="Imagem de perfil do desenvolvedor">
+                    <img src="assets/profile-code.svg" alt="Imagem de código representando o desenvolvedor">
+                </div>
+                <p>Hello World! Meu nome é <strong>Martina Santos</strong> e sou</p>
+
+                <h1>Desenvolvedor Fullstack</h1>
+
+                <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</p>
         
-        <li>GitHub</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>TypeScript</li>
-        <li>Node.js</li>   
-
-        <img src="" alt="">
-
-    </header>
-    <section>
+                <ul class="technology-icons">
+                    <li>
+                        <img src="assets/technology-icons/GitHub.svg" alt="">GitHub
+                    </li>
+                    <li>
+                        <img src="assets/technology-icons/HTML.svg" alt="">HTML
+                    </li>
+                    <li>
+                        <img src="assets/technology-icons/CSS.svg" alt="">CSS
+                    </li>
+                    <li>
+                        <img src="assets/technology-icons/JavaScript.svg" alt="">JavaScript</li>
+                    <li>
+                        <img src="assets/technology-icons/Node.js.svg" alt="">Node.js
+                    </li>
+                    <li>
+                        <img src="assets/technology-icons/React.svg" alt="">React
+                    </li>
+                </ul>
+        
+                <img src="assets/scrow-down-page.svg" alt="Botão para rolar a página para baixo" class="scroll-down">
+        
+            </div>
+        </header>
+        <section class="padding">
             <strong>Meu trabalho</strong>
-            <h3>Veja os projetos em destaque</h3>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Travelgram</h3>
-                    <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            <h2>Veja os projetos em destaque</h2>
+            <div id="my-projects">
+            <div class="wrap">
+                    <div class="cards">
+                        <div class="card">
+                            <img src="assets/thumbs/Thumbnail_Project-01.png" alt="Thubm do projeto Travelgram">
+                            <h3>Travelgram</h3>
+                            <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="assets/thumbs/Thumbnail_Project-02.png" alt="Thubm do projeto Tech News">
+                            <h3>Tech News</h3>
+                            <p>Homepage de um portal de notícias sobre a área de tecnologia</p>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="assets/thumbs/Thumbnail_Project-03.png" alt="Thubm do projeto Página de receita">
+                            <h3>Página de receita</h3>
+                                <p>Página com o passo a passo de uma receita para cupcakes</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="assets/thumbs/Thumbnail_Project-04.png" alt="Thubm do projeto Zingen">
+                                <h3>Zingen</h3>
+                                <p>Landing Page completa e responsiva de um aplicativo de Karaokê</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="assets/thumbs/Thumbnail_Project-05.png" alt="Thubm do projeto Reund">
+                                <h3>Refund</h3>
+                                <p>Um sistema para pedido e acompanhamento de reembolso</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="assets/thumbs/Thumbnail_Project-06.png" alt="Thubm do projeto Página de Turismo">
+                                <h3>Página de turismo</h3>
+                                <p>Página com as principais informações para quem quer viajar para Busan</p>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Tech News</h3>
-                    <p>Homepage de um portal de notícias sobre a área de tecnologia</p>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Página de receita</h3>
-                    <p>Página com o passo a passo de uma receita para cupcakes</p>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Zingen</h3>
-                    <p>Landing Page completa e responsiva de um aplicativo de Karaokê</p>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Refund</h3>
-                    <p>Um sistema para pedido e acompanhamento de reembolso</p>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Página de turismo</h3>
-                    <p>Página com as principais informações para quem quer viajar para Busan</p>
-                </div>
-            </div>
-        </section>
+            </section>
         
-        <section>
-            <strong>Meus serviços</strong>
-            <h3>Como posso ajudar seu negócio</p>
-            
-            <div class="cards-services">
-                <div class="card-services">
-                    <img src="" alt="">
-                    <h3>Websites e Aplicativos</h3>
-                    <p>Desenvolvimento de interfaces</p>
+            <section class="background padding">
+                <strong>Meus serviços</strong>
+                <h2>Como posso ajudar seu negócio</h2>
+        
+                <div id="my-services">
+                    <div class="cards-services">
+                        <img src="assets/services/web-apps.svg" alt="Ícone de desenvolvimento web e app">
+                        <div>
+                            <h3>Websites e Aplicativos</h3>
+                            <p>Desenvolvimento de interfaces</p>
+                        </div>
+                    </div>
+                    <div class="cards-services">
+                        <img src="assets/services/api-db.svg" alt="Ícone de API e banco de dados">
+                        <div>
+                            <h3>API e banco de dados</h3>
+                            <p>Criação de serviços do sistema </p>
+                        </div>
+                    </div>
+                    <div class="cards-services">
+                        <img src="assets/services/devops.svg" alt="Ícone de DevOps">
+                        <div>
+                            <h3>DevOps</h3>
+                            <p>Gestão e infraestrutura da aplicação</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="cards-services">
-                <div class="card-services">
-                    <img src="" alt="">
-                    <h3>API e banco de dados</h3>
-                    <p>Criação de serviços do sistema </p>
+            </section>
+            <footer class="padding">
+                <div>
+                    <strong>Contato</strong>
+                    <h2>Gostou do meu trabalho?</h2>
+                    <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+                    <ul>
+                        <li><img src="assets/social-icons/linkedin.svg" alt="Link para perfil do LinkedIn"><a href="#">LinkedIn</a><img src="assets/social-icons/flash.svg" alt="Seta indicando redirecionamento do link"></li>
+                        <li><img src="assets/social-icons/instagram.svg" alt="Link para perfil do Instagram"><a href="#">Instagram</a><img src="assets/social-icons/flash.svg" alt="Seta indicando redirecionamento do link"></li>
+                        <li><img src="assets/social-icons/github.svg" alt="Link para perfil do GitHub"><a href="#">GitHub</a><img src="assets/social-icons/flash.svg" alt="Seta indicando redirecionamento do link"></li>
+                        <li><img src="assets/social-icons/email.svg" alt="Link para email"><a href="#">E-mail</a><img src="assets/social-icons/flash.svg" alt="Seta indicando redirecionamento do link"></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="cards-services">
-                <div class="card-services">
-                    <img src="" alt="">
-                    <h3>DevOps</h3>
-                    <p>Gestão e infraestrutura da aplicação</p>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <div>
-                <strong>Contato</strong>
-                <h3>Gostou do meu trabalho?</h3>
-                <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
-
-                
-            </div>
-        </footer>
+            </footer>
+    </div>
 </body>
 </html>
