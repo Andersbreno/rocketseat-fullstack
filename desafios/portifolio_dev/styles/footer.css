@@ -1,0 +1,56 @@
+footer {
+    background: url("../assets/backgrounds/Background_Intro.png") center center/cover no-repeat local;
+
+    & h2 {
+        margin: 0;
+    }
+
+    & p {
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+    
+    & strong {
+        color: #BB72E9;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        align-items: center;
+    }
+    
+    & li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 12px;
+     
+        width: 400px;
+        background-color: #292C34;
+        
+        border-radius: 12px;
+        padding: 23px;
+
+        
+    }
+
+    & a {
+        
+        text-align: left;
+        text-decoration: none;
+        font: var(--text-md);
+        color: var(--secondary-txt-color);
+
+        
+        flex: 5;
+        
+    }
+
+}    
+
+
+
