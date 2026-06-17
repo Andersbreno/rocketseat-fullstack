@@ -121,7 +121,7 @@ export default function App() {
         <Tip tip={challenge.tip} />
 
         <div className={`${styles.word} ${shake && styles.shake}`}>
-          {challenge.word.split("").map((letter, index) => {
+           {challenge.word.split("").map((letter, index) => {
             const letterUsed = lettersUsed.find((used) => used.value.toUpperCase() === letter.toUpperCase())
           
             return <Letter key={index} value={letterUsed?.value} color={letterUsed?.correct ? "correct" : "default"} />
