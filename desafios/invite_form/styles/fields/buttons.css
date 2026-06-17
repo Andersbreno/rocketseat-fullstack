@@ -1,0 +1,29 @@
+ .div-button{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+button {
+    border: none;
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font: var(--font-body);
+
+    background-color: #1D6FB6;
+    margin-top: 48px;
+    right: 0;
+    padding: 12px 20px;
+
+    gap: 12px;
+
+    border-radius: 8px;
+}
+

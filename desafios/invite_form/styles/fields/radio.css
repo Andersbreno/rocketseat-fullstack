@@ -1,0 +1,93 @@
+.option, .theme-event .input-wrapper > div{      
+  display: flex;
+  flex: 1;
+  position: relative;
+
+  
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  
+  cursor: pointer;
+  
+  & input,
+  & input:focus,
+  & input:hover { 
+    
+    all: unset;
+    inset: 0;
+    position: absolute;
+    
+  }
+
+  &:hover, &:focus-within {
+    background-color: var(--input-stk);         
+  }
+
+  &:has(:checked) {
+    background-color: var(--input-stk);
+  }
+}
+
+.option{
+  
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  
+  padding: calc(12px - 4px) 18px;
+  border-radius: 5px;
+  
+  & label {
+    margin: 0;
+  }
+  
+}
+
+.theme-event .input-wrapper {
+  gap: 8px;
+  
+  & div:has(input + label) {
+    flex: 0;
+    padding: 4px 4px 0;
+    
+    text-align: center;
+    
+    
+    background-color: var(--input-base);
+    border-radius: 8px;
+
+  
+    & label {
+      margin-top: 0;
+    }
+
+    & img {
+      margin-bottom: 8px;
+    }
+
+    & input:hover,
+    & input:focus {
+      border: 4px solid var(--input-stk);
+      border-radius: 8px;
+      outline: 3px solid #59B2FF;
+      outline-offset: -2px;
+    }
+  }
+}
+
+.input-wrapper div:has(label[for="styles"]) {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+input[id="styles"] {
+  width: 65px;
+  border-radius: 50px;
+}
+
+
+
+.checkbox {
+  flex-direction: column;
+}

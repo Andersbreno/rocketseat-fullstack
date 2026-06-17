@@ -1,0 +1,153 @@
+input, textarea{
+  appearance: none;
+  padding: 12px;
+
+  background-color: var(--input-base);
+  color: white;
+  width: 100%;
+  
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: 1px solid var(--input-stk);
+    
+  font: var(--font-body-md);
+    
+  transition: border-color .2s ease-in-out;
+
+  &:invalid {
+    border-color: var(--field-alert);
+  }
+
+  &[required] + .error {
+    display: flex;
+    color: var(--field-alert);
+    align-items: center;
+    gap: .25rem;
+    font: var(--font-body-xs);
+
+    margin-top: .25rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
+
+div:not(.option) > label {
+    font: var(--font-body-sm);
+    color: var(--text-body);
+ 
+    display: block;
+    margin: 12px 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+input[type="datetime-local"]:focus-within {
+    outline: 2px  solid #59B2FF;
+    outline-offset: .1px;
+}
+
+input[type="datetime-local"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+    
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+    &:has(#dark-theme) {
+      
+      
+      flex-wrap: nowrap;
+      gap: 16px;
+    }
+}
+
+div:has(label + input),
+div:has(input + label) {
+  flex: 1;
+}
+
+
+.div-options {
+  display: flex;
+  
+  
+  gap: 4px;
+  justify-content: space-between;
+  padding: 4px;
+  
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: 1px solid var(--input-stk);
+  
+  background-color: var(--input-base);
+  margin: 0;
+
+}
+
+textarea {
+  padding: 16px;
+}
+
+.div-color-invite > input{
+  width: inherit;
+  border-radius: 50%;
+}
+
+.div-color-invite {
+  transition: none;
+
+  & input {
+    margin: 6px;
+    border: 5px solid var(--input-stk);
+  }
+  
+  & input:hover,
+  & input:focus {
+    border: 5px solid var(--input-stk);
+    outline: 3px solid #59B2FF;
+  }
+
+
+  & :nth-child(2) {
+    background-color: #59B2FF;
+  }
+  & :nth-child(3) {
+    background-color: #6A59FF;
+  }
+  & :nth-child(4) {
+    background-color: #B259FF;
+  }
+  & :nth-child(5) {
+    background-color: #FF59F9;
+  }
+  & :nth-child(6) {
+    background-color: #FF598B;
+  }
+  & :nth-child(7) {
+    background-color: #FF5959;
+  }
+  & :nth-child(8) {
+    background-color: #FF8B59;
+  }
+  & :nth-child(9) {
+    background-color: #FFCD59;
+  }
+  & :nth-child(10) {
+    background-color: #E1FF59;
+  }
+  & :nth-child(11) {
+    background-color: #59FF91;
+  }
+  & :nth-child(12) {
+    background-color: #59FFF9;
+  }
+}

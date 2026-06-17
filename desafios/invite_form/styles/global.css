@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+
+    --text-body: #C8CDD0;
+    --text-heading: #F9F9F9;
+    --shape-bg: #131516;
+    --shape-bd: #212427;
+    --shape-btn: #2D3136;
+    --shape-hover: #383D42;
+
+    --input-base: #1C1F21;
+    --input-stk: #363B40;
+    --input-plh: #869198;
+
+    --field-alert: #FF5959;
+    
+    --font-heading: ballo2, sans-serif;
+    --font-heading-md: bold 28px auto var(--font-heading);
+    --font-heading-sm: bold 18px auto var(--font-heading);
+
+    --font-body: open-sans, sans-serif;
+    --font-body-md: normal 16px auto var(--font-body);
+    --font-body-sm: normal 14px auto var(--font-body);
+    --font-body-xs: normal 12px auto var(--font-body);
+
+}
+
+body {
+    background-color: var(--shape-bg);
+    color: var(--text-body);
+    padding: 20px;
+    overflow: hidden;
+
+    max-width: 1280px;
+    margin: auto;
+    
+    font: var(--font-body-md);
+    
+}
+
+
+
+body > div {
+    display: flex;
+    gap: 20px;
+/* 
+    display: grid;
+    grid-template-columns: 1fr 2.5fr; */
+    height: 100vh;
+    
+    overflow: auto;
+    
+}
+
+aside, main {
+    border-radius: 12px;
+    background-color: var(--shape-bd);
+    
+}
+
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  width: 30px;
+  
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+
+    box-shadow: inset 0 0 0 4px var(--shape-bd); /* Creates 'padding' around the thumb */
+    background: var(--shape-hover); 
+    border-radius: 15px;
+    border: 5px solid var(--shape-bd); 
+    outline: 2px solid var(--shape-bd); /* Creates 'padding' around the thumb */
+    /* Creates 'padding' around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+h1 {
+    font-family: Leckerli One, open-sans;
+    color: #FF598B;
+}
+
+h2 {
+    font: var(--font-heading-md);
+}
+
+fieldset {
+    margin-top: 48px;
+}
+
+legend {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.line {
+    border: 1px solid var(--shape-hover);
+    margin: 48px 0 ;
+}

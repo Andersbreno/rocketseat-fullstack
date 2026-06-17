@@ -1,0 +1,45 @@
+.button-file {
+    flex-grow: 1;
+    & div {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 16px;
+        
+    }
+    
+    
+    
+    & div input {
+        position: relative;
+        
+    }
+    
+    & input {
+        display: inherit;
+        background: none;
+        border: none;
+        outline: none;
+        inset: 0;  
+        all: unset;
+        position: absolute;
+    }
+    & input[type="file"]::file-selector-button {
+        display: none;
+    }
+    
+    & .drop-area {
+        background-color: var(--input-stk);
+        border-radius: 8px;
+        padding: 12px;
+        overflow: hidden;
+        
+        
+        & label {
+            
+            margin: 0;
+        }
+    }
+
+
+}

@@ -1,0 +1,37 @@
+@import url(fields/index.css);
+
+#div-scroll {
+    background: var(--shape-bd);
+    max-width: 100%;
+    padding: 80px 130px;
+
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+
+    & div {
+        flex-wrap: wrap;
+        display: ;
+    }
+    
+}
+
+#title-name {
+    flex: 100%;
+}
+
+
+main {
+    overflow: auto;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font: var(--font-heading-sm);
+}
+
