@@ -117,3 +117,86 @@ aside {
         object-fit: cover;
     }
 }
+
+@media (width <= 360px) {
+    #featured {
+        grid-template-rows: 2fr 4fr;
+        h2 {
+            text-overflow: ellipsis;
+            overflow: hidden;   
+            display: -webkit-box;    
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+        div  {
+            grid-auto-flow: row;
+        }
+
+
+
+    }
+
+
+    #weekly {
+        
+        & > div {
+            grid-template-columns: 1fr;
+        }
+
+        figure p {
+
+            overflow: hidden;   
+            display: -webkit-box;    
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    #ai {
+        article {
+            display: grid;
+            grid-template-columns: 5fr 2fr;
+            
+            gap: 16px;
+            direction: rtl;
+            & div {
+                direction: ltr;
+                overflow: hidden;    
+                h3 {
+                    order: 2;
+                    overflow: hidden;   
+                    display: -webkit-box;    
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+
+                }
+                p {
+                    overflow: hidden;             
+                    text-overflow: ellipsis;
+                    display: -webkit-box;    
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    order: 1;
+                }
+                img {
+                }
+    
+            }
+        }
+
+    }
+    #more {
+        & > div h3 {
+            text-overflow: ellipsis;
+            overflow: hidden;   
+            display: -webkit-box;    
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            
+        }
+    }
+}

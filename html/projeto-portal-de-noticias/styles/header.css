@@ -22,3 +22,26 @@
     border-inline: none;
     justify-content: space-between;
 }
+
+@media (width <= 360px) {
+
+    header nav:first-child {
+        gap: 70px;
+    }
+
+    header nav:last-child {
+        gap: 32px;
+    }
+
+    nav {
+        text-wrap: nowrap;
+    }
+
+    header strong {
+        display: none;
+    }
+    #secondary {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+}

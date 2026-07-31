@@ -30,3 +30,17 @@
 .text-sm {
     font: var(--text-sm);
 }
+
+@media (width <= 360px) {
+    .grid {
+        display: grid
+    }
+
+    main section.grid-flow-col {
+        grid-auto-flow: row;
+    }
+
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}

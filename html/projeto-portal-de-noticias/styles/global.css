@@ -73,3 +73,18 @@ main {
     color: var(--text-color-primary);
     box-shadow: 0px 4px 16px rgba(rgba(0, 0, 0, 0.26));
 }
+
+@media (width <= 360px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "featured "
+        "weekly "
+        "ai "
+        "aside ";
+    }
+
+    .container {
+        padding-inline: 16px;
+    }
+}
