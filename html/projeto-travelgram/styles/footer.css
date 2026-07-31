@@ -9,3 +9,13 @@ footer span:nth-child(1) {
     margin-right: auto;
 }
 
+@media (width <= 360px) {
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+    footer :first-child {
+    
+    flex: 1 0 100%
+  }
+}

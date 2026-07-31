@@ -24,6 +24,7 @@ body {
     font: var(--text);
     color: var(--text-color-secondary);
     background-color: var(--background-color);
+    margin: auto;
 }
 
 a {
@@ -45,4 +46,10 @@ a:hover {
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+@media (width <= 360px) {
+    main.container {
+        padding: 37px;
+    }
 }

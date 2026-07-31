@@ -39,3 +39,11 @@ header .container {
     gap: 8px;
 
 }
+
+@media (width <= 360px) {
+    div.container, div#profile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
