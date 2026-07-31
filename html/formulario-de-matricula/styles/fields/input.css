@@ -90,3 +90,52 @@ input {
     }
 }
 
+@media (width <= 360px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    div.main-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    div input, div textarea, div select {
+        display: flex;
+        max-width: 100%;
+        width: auto;
+        margin: 0 4px;
+    }
+    
+    .input-wrapper, 
+    .textarea-wrapper, 
+    .select-wrapper,
+    .droparea-wrapper, .dropzone {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 4px;
+    }
+
+    div.flex {
+        flex-wrap: wrap;
+    }
+
+    .terms-wrapper {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .actions-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        text-align: center;
+        margin-bottom: 2rem;
+        & .btn-secondary{
+            margin-left: 0;
+        }
+    }
+}

@@ -50,3 +50,26 @@ aside {
     }
     
 }
+
+@media (width <= 360px) {
+    #app {
+        overflow: visible;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 5fr;
+        grid-template-areas:
+        "aside" 
+        "main";
+    }
+
+    aside {
+        grid-area: aside;
+        h2, p {
+            display: none;
+        }
+    }
+
+    main {
+        grid-area: main;
+        overflow: visible;
+    }
+}

@@ -52,3 +52,11 @@ img {
     flex: 2;
 }
 
+@media (width <= 360px) {
+    body {
+        overflow: visible;
+    }
+    main {
+        margin-top: 2rem;
+    }
+}
