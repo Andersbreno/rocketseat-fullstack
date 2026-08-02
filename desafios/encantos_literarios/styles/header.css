@@ -1,0 +1,19 @@
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav button{
+    padding: 12px 20px;
+    background-color: var(--pink-dark);
+    color: var(--text-bd);
+    font: var(--button);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}

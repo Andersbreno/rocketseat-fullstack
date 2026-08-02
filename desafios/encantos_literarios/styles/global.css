@@ -5,3 +5,60 @@
     
 }
 
+:root {
+    --pink-light:#C59DD2;
+    --pink-base:#9547A5;
+    --pink-dark:#7D298A;
+    --pink-low:#3F0F41;
+
+    --blue-light:#73B6D2;
+    --blue-base:#358BB9;
+    --blue-dark:#2374A4;
+    --blue-low:#144A72;
+
+    --shape-stk:#002347;
+    --shape-hover:#001933;
+    --shape-base:#000F1F;
+    --shape-bg:#00050A;
+
+    --text-title:#F8FBFB;
+    --text-bd:#E2E7E9;
+    --text-label:#BAC6C9;
+
+    --font-family: "Raleway", sans-serif;
+    --title-lg: bold 48px/normal var(--font-family);
+    --title-md: bold 40px/normal var(--font-family);
+    --title-sm: bold 32px/normal var(--font-family);
+    --title-xs: bold 16px/normal var(--font-family);
+    --subtitle: 500 32px/200% var(--font-family);
+    --bd-lg: bold 20px/140% var(--font-family);
+    --bd-md: bold 16px/140% var(--font-family);
+    --bd-sm: bold 14px/140% var(--font-family);
+    --bd-xs: bold 12px/140% var(--font-family);
+    --button: bold 14px/normal var(--font-family);
+    --link: 500 14px/normal var(--font-family);
+    --tag: bold 10px/normal var(--font-family);
+
+}
+
+body {
+    padding: 25px;
+    background: var(--shape-bg) url('../assets/img/hero-background.png') no-repeat top center / auto 460px border-box;
+    color: var(--text-bd);
+}
+
+h1 {
+    font: var(--title-lg);
+}
+
+h2 {
+    font: var(--title-md);
+}
+
+h3 {
+    font: var(--title-sm);
+}
+
+h4 {
+    font: var(--title-xs);
+}
