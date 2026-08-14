@@ -2,9 +2,17 @@ header > nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 40px auto 0;
 }
 
 nav img {
+    height: 50px;
+}
+
+nav div {
+    background: url('../assets/icons/logo-horizontal.svg') no-repeat center / contain;
+    width: 260px;
     height: 50px;
 }
 

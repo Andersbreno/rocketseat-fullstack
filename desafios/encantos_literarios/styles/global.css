@@ -43,8 +43,10 @@
 
 body {
     padding: 25px;
-    background: var(--shape-bg) url('../assets/img/hero-background.png') no-repeat top center / auto 460px border-box;
+    background: var(--shape-bg) url('../assets/img/hero-background.png') no-repeat top center / auto 100vh border-box;
     color: var(--text-bd);
+    font-family: var(--font-family);
+    text-align: center;
 }
 
 h1 {

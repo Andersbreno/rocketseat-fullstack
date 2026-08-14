@@ -1,0 +1,50 @@
+.footer {
+    background: url(../assets/img/book-trace-background.png) no-repeat top center /  100vw 415px border-box;
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+
+    padding: 170px 160px 115px;
+
+    justify-content: flex-end;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footers-logo {
+    & img {
+        margin-bottom: 20px;
+    }
+}
+
+.footer-info-links {
+    display: flex;
+    
+    
+    text-align: left;
+    gap: 56px;
+    
+    & h3, li {
+        margin-bottom: 12px;
+    }
+
+    & h3{
+        font: var(--tittle-sx);
+    }
+
+    & li {
+        list-style: none;
+    }
+
+    & a{
+        font: var(--link);
+        text-decoration: none;
+    }
+}
+
+footer div {
+
+}
