@@ -30,17 +30,18 @@
     & h3, li {
         margin-bottom: 12px;
     }
-
+    
     & h3{
         font: var(--tittle-sx);
     }
-
+    
     & li {
         list-style: none;
     }
-
+    
     & a{
         font: var(--link);
+        color: var(--text-bd);
         text-decoration: none;
     }
 }

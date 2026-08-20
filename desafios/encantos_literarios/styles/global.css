@@ -32,7 +32,7 @@
     --title-xs: bold 16px/normal var(--font-family);
     --subtitle: 500 32px/200% var(--font-family);
     --bd-lg: bold 20px/140% var(--font-family);
-    --bd-md: bold 16px/140% var(--font-family);
+    --bd-md: normal 16px/140% var(--font-family);
     --bd-sm: bold 14px/140% var(--font-family);
     --bd-xs: bold 12px/140% var(--font-family);
     --button: bold 14px/normal var(--font-family);
@@ -42,7 +42,7 @@
 }
 
 body {
-    padding: 25px;
+    padding: 25px 0;
     background: var(--shape-bg) url('../assets/img/hero-background.png') no-repeat top center / auto 100vh border-box;
     color: var(--text-bd);
     font-family: var(--font-family);
@@ -54,11 +54,11 @@ h1 {
 }
 
 h2 {
-    font: var(--title-md);
+    font: var(--title-sm);
 }
 
 h3 {
-    font: var(--title-sm);
+    font: var(--title-xs);
 }
 
 h4 {
